@@ -6,24 +6,21 @@ Below section provides detailed information to create new project in Visual Stud
 In order to add ComboBoxAdv control manually in XAML, do the below steps,
 
 1. Add the below required assembly references to the project,
-
    * Syncfusion.Shared.WPF
 2. Import Syncfusion WPF schema http://schemas.syncfusion.com/wpf in XAML page or Syncfusion.Windows.Tools.Controls namespace.
-
 3. Declare ComboBoxAdv in XAML page.
 **[XAML]**
 
 ```
- <Grid>
-        <syncfusion:ComboBoxAdv Height="30" Width="150"/>
-    </Grid>
+<Grid>
+      <syncfusion:ComboBoxAdv Height="30" Width="150"/>
+</Grid>
 ```
 
 # Adding control manually in C#
 In order to add ComboBoxAdv control manually in C#, do the below steps,
 
 1. Add the below required assembly references to the project,
-
     * Syncfusion.Shared.WPF
 2. Import ComboBoxAdv namespace Syncfusion.Windows.Tools.Controls.
 
