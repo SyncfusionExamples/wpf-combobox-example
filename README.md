@@ -1,55 +1,60 @@
-# wpf ComboBox example
-This sample shows how to get started with using wpf combobox (comboboxadv) control.
-# Creating project
-Below section provides detailed information to create new project in Visual Studio to display ComboBoxAdv.
-# Adding control manually in XAML
-In order to add ComboBoxAdv control manually in XAML, do the below steps,
+# WPF ComboBoxAdv Example
+## Overview
+This sample demonstrates how to get started with using the Syncfusion WPF ComboBoxAdv control. ComboBoxAdv is an enhanced combo box control that provides additional styling and functionality compared to the standard WPF ComboBox.
 
-1. Add the below required assembly references to the project,
-   * Syncfusion.Shared.WPF
-2. Import Syncfusion WPF schema http://schemas.syncfusion.com/wpf in XAML page or Syncfusion.Windows.Tools.Controls namespace.
-3. Declare ComboBoxAdv in XAML page.
-**[XAML]**
+## Creating the Project
+Follow these steps to create a new WPF project in Visual Studio and display the ComboBoxAdv control.
 
+### Adding the Control Manually in XAML
+**Steps:**
+1. Add the required assembly reference:
+   - Syncfusion.Shared.WPF
+     
+2. Import the Syncfusion WPF schema in your XAML page:
+```XAML
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+```
+
+3. Declare the ComboBoxAdv control:
 ```
 <Grid>
-      <syncfusion:ComboBoxAdv Height="30" Width="150"/>
+    <syncfusion:ComboBoxAdv Height="30" Width="150" />
 </Grid>
 ```
 
-# Adding control manually in C#
-In order to add ComboBoxAdv control manually in C#, do the below steps,
+## Adding the Control Manually in C#
+**Steps:**
+1. Add the required assembly reference:
+   - Syncfusion.Shared.WPF
 
-1. Add the below required assembly references to the project,
-    * Syncfusion.Shared.WPF
-2. Import ComboBoxAdv namespace Syncfusion.Windows.Tools.Controls.
-
-3. Create ComboBoxAdv control instance and add it to the page.
-
-
-**[C#]**
+2. Import the namespace:
+```C#
+using Syncfusion.Windows.Tools.Controls;
 ```
+3. Create and configure the ComboBoxAdv control:
+``` C#
 public partial class MainWindow : Window
 {
     public MainWindow()
     {
         InitializeComponent();
         ComboBoxAdv comboBoxAdv = new ComboBoxAdv();
-        this.Content = comboBoxAdv;
         comboBoxAdv.Height = 30;
         comboBoxAdv.Width = 150;
-        comboBoxAdv.DefaultText = "choose Items";
+        comboBoxAdv.DefaultText = "Choose Items";
+        this.Content = comboBoxAdv;
     }
 }
+
 ```
-## How to run this application?
+## How to Run This Application
+- Clone the wpf-combobox-example repository.
+- Open the solution in Visual Studio.
+- Build and run the project to view the output of ComboBoxAdv.
 
-To run this application, you need to first clone the wpf-combobox-example repository and then open it in Visual Studio 2022. Now, simply build and run your project to view the output.
-
-## <a name="troubleshooting"></a>Troubleshooting ##
-### Path too long exception
-If you are facing path too long exception when building this example project, close Visual Studio and rename the repository to short and build the project.
-
-## License
-
-Syncfusion has no liability for any damage or consequence that may arise by using or viewing the samples. The samples are for demonstrative purposes, and if you choose to use or access the samples, you agree to not hold Syncfusion liable, in any form, for any damage that is related to use, for accessing, or viewing the samples. By accessing, viewing, or seeing the samples, you acknowledge and agree Syncfusion’s samples will not allow you seek injunctive relief in any form for any claim related to the sample. If you do not agree to this, do not view, access, utilize, or otherwise do anything with Syncfusion’s samples.
+## Troubleshooting
+### Path Too Long Exception
+If you encounter a "path too long" error while building the project:
+- Close Visual Studio.
+- Rename the repository folder to a shorter name.
+- Reopen and build the project.
